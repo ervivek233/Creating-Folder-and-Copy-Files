@@ -67,11 +67,9 @@ def create_folders_from_excel(file_path, sheet_name, column_number):
 if __name__ == "__main__":
     def user_value():
         excel_file=input("Enter excel file path having folder names: ")  #"C:\Users\V1\Downloads\FDT & Mediasaturn enhancements.xlsx"
-        sheet_name= input("Please enter the sheet name: ")
-        column_number=int(input("Please emter the coulumn number: "))
+        sheet_name= input("Please enter the sheet name: ") #in which sheet folder name available.
+        column_number=int(input("Please emter the coulumn number: ")) #in which column name are available Like-(A=1, B=2, etc..)
         create_folders_from_excel(excel_file, sheet_name, column_number)
-    #excel_file = "C:\\Users\\V1\\Downloads\\FDT & Mediasaturn enhancements.xlsx"
-    #sheet_name = "Page1"  # Replace with your sheet name
-    #column_number = 1  # Column number where folder names are listed (A=1, B=2, etc.)
+    
     user_value()
     
